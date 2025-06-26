@@ -1,0 +1,23 @@
+.navbar {
+    width: 100vw;
+    height: 50px;
+    top: 0;
+    display: flex;
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: rgb(187, 187, 187);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 100px;
+    padding: 0;
+}
+
+.nav-links li {
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+:root {
+    --footer-height: 50px;
+    --header-height: 50px;
+}
+
+.content-wrapper {
+    width: 85%;
+    padding-bottom: var(--footer-height);
+    padding-top: var(--header-height);
+    margin: 0 auto;
+}
+
+.button {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-right: 40px;
+    font-size: 15px;
+}
+
+.button:hover {
+    background-color: grey;
+    cursor: pointer;
+}
