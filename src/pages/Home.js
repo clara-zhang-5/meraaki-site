@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Home.css';
 import '../styles/global.css';
+import '../styles/fonts.css';
 
 function Home() {
     return (

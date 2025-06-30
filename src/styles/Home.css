@@ -119,6 +119,8 @@
     height: 50vh;
     border: 2px solid grey;
     padding: 40px;
+    background: red;
+    background-image: var(--gradient1);
 }
 
 .insights-intelligence {
