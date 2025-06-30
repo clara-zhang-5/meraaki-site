@@ -3,7 +3,7 @@ import '../styles/Navbar.css';
 function Navbar() {
     return (
         <div className="navbar">
-            <nav>
+            <nav className="p1">
                 <ul className="nav-links">
                     <li>Home</li>
                     <li>Approach</li>

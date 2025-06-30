@@ -13,11 +13,12 @@
 .footer {
     width: 100vw;
     height: 50px;
-    background: rgb(187, 187, 187);
-    position: fixed;
+    background-image: var(--grad1);
     bottom: 0;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
+    color: white;
+    
 }

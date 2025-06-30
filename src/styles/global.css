@@ -1,6 +1,9 @@
 :root {
     --footer-height: 50px;
     --header-height: 50px;
+    --grad1: linear-gradient(to right, #5937E9, #2F7AEC, #00C5F0);
+    --grad2: linear-gradient(to right, #5937E966, #2F7AEC66, #00C5F066);
+    --grad3: linear-gradient(to right, #D2C7FB, #B7C7FF, #B5E8F8);
 }
 
 .content-wrapper {

@@ -9,13 +9,13 @@ function Home() {
             <section className="get-started">
                 <div className="content-wrapper">
                     <h1>[Logo]</h1>
-                    <h2 className="h3">Meraaki Designs</h2>
+                    <h2 className="h3">MERAAKI DESIGNS</h2>
                 </div>
             </section>
             <section className="page2">
                 <div className="content-wrapper">
                     <div className="tagline">
-                        <h1 className="h2">Systems That Scale</h1>
+                        <h1 className="h2">Systems That Scale.</h1>
                         <h1 className="h2">Design That Performs.</h1>
                     </div>
                     <p className="p1">
@@ -31,10 +31,12 @@ function Home() {
             </section>
             <section className="services">
                 <div className="content-wrapper">
-                    <p className="h1">SERVICES</p>
-                    <h1 className="h2">What We Do Best</h1>
+                    <div className="header">
+                        <p className="h1">SERVICES</p>
+                        <h1 className="h2">What We Do Best</h1>
+                    </div>
                     <div className="service-types-wrapper">
-                        <ul className="h2">
+                        <ul className="h2" style={{listStyle:"none"}}>
                             <li>Design & Branding</li>
                             <ul className="p1">
                                 <li>UI/UX Design</li>

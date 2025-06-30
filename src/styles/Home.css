@@ -1,14 +1,3 @@
-.section-header {
-    color: blue;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.section-tagline {
-    font-weight: bold;
-    font-size: 40px;
-}
-
 .get-started {
     height: 100vh;
     padding-bottom: var(--footer-height);
@@ -19,15 +8,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.get-started h2 { 
-    font-size: 40px;
-    letter-spacing: 5px;
-}
-
-.tagline {
-    line-height: 0.75;
+    background-image: var(--grad1);
+    color: white;
 }
 
 .page2 {
@@ -43,10 +25,6 @@
     text-align: left;
 }
 
-.page2 h1 {
-    font-size: 40px;
-}
-
 .page2 .content-wrapper {
     text-align: left;
     display: block;
@@ -54,15 +32,21 @@
 
 .our-partners {
     width: 100%;
-    border: 2px solid black;
-    
+    min-height: 150px;
+    background-color: rgb(236, 236, 236);
 }
 
-.services .section-tagline {
-    text-align: center;
+.services {
+    padding-bottom: var(--footer-height);
+    padding-top: var(--header-height);
+    background-image: var(--grad3);
+    color: black;
 }
-
-.services .section-header {
+.services .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -71,20 +55,6 @@
     font-size: 20px;
     text-align: left;
     display: block;
-}
-
-.service-types {
-    list-style-type: none;
-    line-height: 60px;
-    font-size: 25px;
-    font-weight: 500;
-}
-
-.service-types ul {
-    list-style-type: disc;
-    line-height: 20px;
-    font-size: 20px;
-    font-weight: normal;
 }
 
 .approach {
@@ -119,6 +89,7 @@
     min-height: 50vh;
     border: 2px solid grey;
     padding: 40px;
+    background-image: var(--grad2);
 }
 
 .insights-intelligence {
@@ -153,6 +124,14 @@
     display: block;
     margin: auto;
     bottom: 0;
+}
+
+.partnerships-tech-stack {
+    background-image: var(--grad2);
+}
+
+.partnerships-tech-stack .our-partners {
+    background-color: #D2C7FB;
 }
 
 .start-project {
@@ -213,7 +192,8 @@
 }
 
 .home-footer {
-    background-color: rgb(187, 187, 187);
+    background-image: var(--grad1);
+    color: white;
 }
 
 .home-footer .locations {
@@ -232,4 +212,5 @@
     display: flex;
     flex-wrap: nowrap;
     gap: 5px;
+    
 }
