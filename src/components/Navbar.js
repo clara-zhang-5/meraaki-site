@@ -6,10 +6,10 @@ function Navbar() {
             <nav className="p1">
                 <ul className="nav-links">
                     <li>Home</li>
-                    <li>Approach</li>
                     <li>Services</li>
+                    <li>Approach</li>
                     <li>Projects</li>
-                    <li>About</li>
+                    <li>Contact Us</li>
                 </ul>
             </nav>
         </div>

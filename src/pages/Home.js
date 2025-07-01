@@ -2,90 +2,98 @@ import React from 'react';
 import '../styles/Home.css';
 import '../styles/global.css';
 import '../styles/fonts.css';
+import servicesImg from '../assets/services-img.png';
 
 function Home() {
     return (
         <div className="home-content">
-            <section className="get-started">
+            {/* Hero Section */}
+            <section className="hero1">
                 <div className="content-wrapper">
-                    <h1>[Logo]</h1>
-                    <h2 className="h3">MERAAKI DESIGNS</h2>
+                    <img src="https://meraakidesigns.com/wp-content/uploads/2024/08/Group-48215-1.png" alt="hero img"/>
                 </div>
             </section>
-            <section className="page2">
+            {/* Second Hero Section */}
+            <section className="hero2">
+                <img src="https://meraakidesigns.com/wp-content/uploads/2024/08/mobile-meraaki-logo-1.gif" alt="hero2 img" />
                 <div className="content-wrapper">
-                    <div className="tagline">
-                        <h1 className="h2">Systems That Scale.</h1>
-                        <h1 className="h2">Design That Performs.</h1>
-                    </div>
+                    <h1 className="h2">Systems That Scale.</h1>
+                    <h1 className="h2">Design That Performs.</h1>
                     <p className="p1">
                         Meraaki powers ambitious brands with creative execution, workflow automation, and
                         product strategy—delivering outcomes that move the needle.
                     </p>
-                    <button className="button">Let's Build Your Backbone</button>
-                    <button className="button">Explore Capabilities</button>
+                    <button className="button1">Let's Build Your Backbone</button>
+                    <button className="button2">Explore Capabilities</button>
                 </div>
             </section>
             <section className="our-partners">
                 <h1 className="h2" style={{textAlign:"center"}}>Partners</h1>
             </section>
+            {/* Services Section */}
             <section className="services">
                 <div className="content-wrapper">
                     <div className="header">
                         <p className="h1">SERVICES</p>
                         <h1 className="h2">What We Do Best</h1>
                     </div>
-                    <div className="service-types-wrapper">
-                        <ul className="h2" style={{listStyle:"none"}}>
-                            <li>Design & Branding</li>
-                            <ul className="p1">
-                                <li>UI/UX Design</li>
-                                <li>Brand Identity</li>
-                                <li>Product Visual Systems</li>
-                            </ul >
-                            <li>Digital Marketing</li>
-                            <ul className="p1">
-                                <li>Item 1</li>
-                                <li>Item 2</li>
-                                <li>Item 3</li>
+                    <div className="services-container">
+                        <img src={servicesImg} alt="image" className="services-image"/>
+                            <div className="service-types-wrapper">
+                            <ul className="h2" style={{listStyle:"none"}}>
+                                <li>Design & Branding</li>
+                                <ul className="p1">
+                                    <li>UI/UX Design</li>
+                                    <li>Brand Identity</li>
+                                    <li>Product Visual Systems</li>
+                                </ul >
+                                <li>Digital Marketing</li>
+                                <ul className="p1">
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                                <li>Tech & Development</li>
+                                <ul className="p1">
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                                <li>Business Automation</li>
+                                <ul className="p1">
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
                             </ul>
-                            <li>Tech & Development</li>
-                            <ul className="p1">
-                                <li>Item 1</li>
-                                <li>Item 2</li>
-                                <li>Item 3</li>
-                            </ul>
-                            <li>Business Automation</li>
-                            <ul className="p1">
-                                <li>Item 1</li>
-                                <li>Item 2</li>
-                                <li>Item 3</li>
-                            </ul>
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </section>
+            {/* Approach Section */}
             <section className="approach">
                 <div className="content-wrapper">
-                    <p className="h1">APPROACH & METHODOLOGY</p>
-                    <h1 className="h2">The Meraaki Method</h1>
-                    <p className="p1">
-                        Ignite innovation as we leverage the Double Diamond model, forging a robust
-                        foundation for your digital product. Through a transformative journey of Discover,
-                        Define, Design, Develop, Deliver, and Evolve, witness the convergence of 
-                        brilliance, propelling your digital vision to unparalleled heights.
-                    </p>
+                    <div className="approach-head">
+                        <p className="h1">APPROACH & METHODOLOGY</p>
+                        <h1 className="h2">The Meraaki Method</h1>
+                        <p className="p1">
+                            Ignite innovation as we leverage the Double Diamond model, forging a robust
+                            foundation for your digital product. Through a transformative journey of Discover,
+                            Define, Design, Develop, Deliver, and Evolve, witness the convergence of 
+                            brilliance, propelling your digital vision to unparalleled heights.
+                        </p>
+                    </div>
                     <div className="stages">
-                        <div className="graph">
-                            <p className="p1">this is where the graph will go</p>
-                        </div>
+                        {/* implement graph + scroll animation */}
+                        <img src="https://meraakidesigns.com/wp-content/uploads/2024/06/mg_discover.png" alt="graph" className="graph" />
                         <div className="stage-description">
-                            <h2 className="h2">Diagnose</h2>
+                            <h2 className="p1" style={{fontWeight:"bold"}}>Diagnose</h2>
                             <p className="p1">Identify friction points, audience drop-offs, and process inefficiencies</p>
                         </div>
                     </div>
                 </div>
             </section>
+            {/* Case Studies Section */}
             <section className="case-studies">
                 <div className="content-wrapper">
                     <p className="h1">CASE STUDIES</p>
@@ -101,13 +109,14 @@ function Home() {
                     </div>
                 </div>
             </section>
+            {/* Insigthts & Intelligence Section */}
             <section className="insights-intelligence">
                 <div className="content-wrapper">
                     <p className="h1">INSIGHTS & INTELLIGENCE</p>
                     <h1 className="h2">Our Blogs</h1>
                     <div className="blogs-showcase">
                         <div className="blog1">
-                            <h3 className="h2">Build Your MVP with Speed and Precision</h3>
+                            <p className="p1" style={{fontWeight:"bold"}}>Build Your MVP with Speed and Precision</p>
                             <p className="p1">
                                 Accelerate your market entry with a meticulously crafted MVP designed
                                 for impact. 
@@ -115,7 +124,7 @@ function Home() {
                             <p className="p3">An image for blog1 goes here</p>
                         </div>
                         <div className="blog2">
-                            <h3 className="h2">Build Your MVP with Speed and Precision</h3>
+                            <p className="p1" style={{fontWeight:"bold"}}>Build Your MVP with Speed and Precision</p>
                             <p className="p1">
                                 Accelerate your market entry with a meticulously crafted MVP designed
                                 for impact. 
@@ -123,9 +132,12 @@ function Home() {
                             <p className="p3">An image for blog2 goes here</p>
                         </div>
                     </div>
-                    <button className="blog-button">Explore More</button>
+                    <div style={{display:"flex", alignItems:"center"}}>
+                        <button className="button1">Explore More</button>
+                    </div>
                 </div>
             </section>
+            {/* Partnerships & Tech Stack Section */}
             <section className="partnerships-tech-stack">
                 <div className="content-wrapper">
                     <p className="h1">PARTNERSHIPS & TECH STACK</p>
@@ -139,17 +151,19 @@ function Home() {
                     <h1 className="h2">Partners</h1>
                 </div>
             </section>
+            {/* Start Project Section */}
             <section className="start-project">
                 <div className="content-wrapper">
-                    <h1 className="h2">
+                    <h1 className="h2" style={{textAlign:"center"}}>
                     Ready to design smarter, automate faster, and scale better?
                     </h1>
                     <p className="p1">
                         Let's co-create a digital foundation that drives clarity, creativity, and convention.
                     </p>
-                    <button>Start Your Project</button>
+                    <button className="button1">Start Your Project</button>
                 </div>
             </section>
+            {/* FAQ Section */}
             <section className="faq">
                 <div className="content-wrapper">
                     <p className="h1">FAQ</p>
@@ -212,6 +226,7 @@ function Home() {
                     </div>
                 </div>
             </section>
+            {/* Footer */}
             <section className="home-footer">
                 <div className="content-wrapper">
                     <h1 className="h2">
