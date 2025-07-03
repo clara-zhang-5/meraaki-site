@@ -1,12 +1,12 @@
 import React from 'react';
 import '../styles/global.css'
 
-function Projects() {
+function Contact() {
     return (
         <div>
-            <h1>This is the Projects page</h1>
+            <h1>This is the Contact page</h1>
         </div>
     )
 }
 
-export default Projects;
+export default Contact;

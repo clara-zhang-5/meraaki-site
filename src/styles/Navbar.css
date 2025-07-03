@@ -16,8 +16,12 @@
     flex-wrap: nowrap;
     gap: 100px;
     padding: 0;
+    text-decoration: none;
+    color: black;
 }
 
 .nav-links li {
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
