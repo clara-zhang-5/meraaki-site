@@ -4,7 +4,11 @@ import '../styles/global.css'
 function Contact() {
     return (
         <div>
-            <h1>This is the Contact page</h1>
+            <section>
+                <div>
+                    <h1>This is the Contact page</h1>
+                </div>
+            </section>
         </div>
     )
 }

@@ -5,6 +5,7 @@ import Contact from './pages/Contact.js';
 import Approach from './pages/Approach.js';
 import Services from './pages/Services.js';
 import Projects from './pages/Projects.js';
+import Careers from './pages/Careers.js';
 import Navbar from './components/Navbar.js';
 import Footer from './components/Footer.js';
 
@@ -13,11 +14,12 @@ function App() {
         <Router>
             <Navbar />
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/Home" element={<Home />} />
                 <Route path="/Services" element={<Services />} />
                 <Route path="/Approach" element={<Approach />} />
                 <Route path="/Projects" element={<Projects />} />
                 <Route path="/Contact" element={<Contact />} />
+                <Route path="/Careers" element={<Careers />} />
             </Routes>
             <Footer />
         </Router>
