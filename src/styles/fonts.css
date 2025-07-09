@@ -1,78 +1,79 @@
-.h1 {
+/* hero headlines, landing page titles */
+.h1 { 
     font-family: 'Jost', sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: normal;
-    letter-spacing: 0.1em;
-    margin-bottom: 0;
+    font-size: 48px;
+    font-weight: 700px; /* bold */
+    line-height: 57px;
     text-align: left;
-    vertical-align: top;
-    color: #0065EF;
 }
 
+/* section titles */
 .h2 {
     font-family: 'Jost', sans-serif;
-    font-size: 44px;
-    font-weight: normal;
-    line-height: 64px;
-    letter-spacing: 0em;
-    margin-bottom: 0;
-    text-align: left;
-    vertical-align: top;
+    font-size: 36px;
+    font-weight: 700px; /* bold */
+    line-height: 47px;
 }
 
+/* subsection headings */
 .h3 {
     font-family: 'Jost', sans-serif;
-    font-size: 24px;
-    font-weight: 550;
-    line-height: 32px;
-    letter-spacing: 2em;
-    margin-bottom: 24px;
-    text-align: left;
-    vertical-align: top;
+    font-size: 28px;
+    font-weight: 600px; /* semi bold */
+    line-height: 36px;
 }
 
+/* small section headers, captions */
 .h4 {
     font-family: 'Jost', sans-serif;
-    font-size: 24px;
-    font-weight: 550;
-    line-height: 32px;
-    letter-spacing: 0;
-    margin-bottom: 24px;
-    text-align: left;
-    vertical-align: top;
+    font-size: 22px;
+    font-weight: 600px; /* semi bold */
+    line-height: 31px;
 }
 
-.p1 {
-    font-family: 'Open Sans Hebrew', sans-serif;
+/* card titles, sidebar titles */
+.h5 {
+    font-family: 'Jost', sans-serif;
     font-size: 18px;
-    font-weight: light;
-    line-height: 30px;
-    letter-spacing: 0em;
-    margin-bottom: 24px;
-    text-align: left;
-    vertical-align: top;
+    font-weight: 500px; /* medium */
+    line-height: 25px;
 }
 
-.p2 {
-    font-family: 'Open Sans Hebrew', sans-serif;
+.h6 {
+    font-family: 'Jost', sans-serif;
     font-size: 16px;
-    font-weight: light;
-    line-height: 28px;
-    letter-spacing: 3em;
-    margin-bottom: 24px;
-    text-align: left;
-    vertical-align: top;
+    font-weight: 500px; /* medium */
+    line-height: 22px;
 }
 
-.p3 {
-    font-family: 'Open Sans Hebrew', sans-serif;
-    font-size: 14px;
-    font-weight: light;
-    font-style: italic;
+/* paragraphs, feature blocks */
+.body-large {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-weight: 400px; /* regular */
+    line-height: 27px;
+}
+
+/* general body content */
+.body-medium {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-weight: 400px; /* regular */
     line-height: 24px;
-    letter-spacing: 0em;
-    margin-bottom: 0;
-    text-align: left;
-    vertical-align: top;
+}
+
+/* descriptions, captions */
+.body-small {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    font-weight: 400px; /* regular */
+    line-height: 21px;
+}
+
+/* notes, disclaimers */
+.body-extra-small {
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    font-weight: 400px; /* regular */
+    line-height: 18px;
 }
