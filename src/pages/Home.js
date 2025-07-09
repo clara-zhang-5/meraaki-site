@@ -4,63 +4,86 @@ import '../styles/global.css';
 import '../styles/fonts.css';
 import servicesImg from '../assets/services-img.png';
 
+function caseStudiesBtn() {
+
+}
+
+function blogsBtn() {
+
+}
+
+function submitForm() {
+
+}
+
 function Home() {
     return (
         <div className="home-content">
             {/* Hero Section */}
-            <section className="hero1">
+            <section className="home-hero1">
                 <div className="content-wrapper">
                     <img src="https://meraakidesigns.com/wp-content/uploads/2024/08/Group-48215-1.png" alt="hero img"/>
                 </div>
             </section>
             {/* Second Hero Section */}
-            <section className="hero2">
-                <img src="https://meraakidesigns.com/wp-content/uploads/2024/08/mobile-meraaki-logo-1.gif" alt="hero2 img" />
-                <div className="content-wrapper">
-                    <h1 className="h2">Systems That Scale.</h1>
-                    <h1 className="h2">Design That Performs.</h1>
-                    <p className="p1">
-                        Meraaki powers ambitious brands with creative execution, workflow automation, and
-                        product strategy—delivering outcomes that move the needle.
-                    </p>
-                    <button className="button1">Let's Build Your Backbone</button>
-                    <button className="button2">Explore Capabilities</button>
+            <section className="home-hero2">
+                <div className="home-hero2-img">
+                    <img src="https://meraakidesigns.com/wp-content/uploads/2024/08/mobile-meraaki-logo-1.gif" alt="hero2 img" />
+                </div>
+                <div className="content-wrapper home-hero2-content">
+                    <div className="home-hero2-description">
+                        <h1 className="h2">Systems That Scale.</h1>
+                        <h1 className="h2"><span style = {{color:"purple"}}>Design</span> That Performs.</h1>
+                        <p className="p1">
+                            Meraaki powers ambitious brands with creative execution, workflow automation, and
+                            product strategy—delivering outcomes that move the needle.
+                        </p>
+                        <button className="button1">Let's Build Your Backbone</button>
+                        <button className="button2">Explore Capabilities</button>
+                    </div>
+                    <div>
+                        <video width="320" height="240" controls>
+                            <source src="movie.mp4" type="video/mp4" />
+                            <source src="movie.ogg" type="video/ogg" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
             </section>
             <section className="our-partners">
                 <h1 className="h2" style={{textAlign:"center"}}>Partners</h1>
             </section>
             {/* Services Section */}
-            <section className="services">
+            <section className="home-services">
                 <div className="content-wrapper">
-                    <div className="header">
+                    <div className="home-services-head">
                         <p className="h1">SERVICES</p>
                         <h1 className="h2">What We Do Best</h1>
                     </div>
-                    <div className="services-container">
-                        <img src={servicesImg} alt="image" className="services-image"/>
-                            <div className="service-types-wrapper">
-                            <ul className="h2" style={{listStyle:"none"}}>
+                    <div className="home-services-container">
+                        <img src={servicesImg} alt="image" className="home-services-image"/>
+                            <div className="home-service-types-wrapper">
+                            <ul className="home-service-types h2" style={{listStyle:"none"}}>
                                 <li>Design & Branding</li>
-                                <ul className="p1">
+                                <ul className="home-services-dropdown p1">
                                     <li>UI/UX Design</li>
                                     <li>Brand Identity</li>
                                     <li>Product Visual Systems</li>
                                 </ul >
                                 <li>Digital Marketing</li>
-                                <ul className="p1">
+                                <ul className="home-services-dropdown p1">
                                     <li>Item 1</li>
                                     <li>Item 2</li>
                                     <li>Item 3</li>
                                 </ul>
                                 <li>Tech & Development</li>
-                                <ul className="p1">
+                                <ul className="home-services-dropdown p1">
                                     <li>Item 1</li>
                                     <li>Item 2</li>
                                     <li>Item 3</li>
                                 </ul>
                                 <li>Business Automation</li>
-                                <ul className="p1">
+                                <ul className="home-services-dropdown p1">
                                     <li>Item 1</li>
                                     <li>Item 2</li>
                                     <li>Item 3</li>
@@ -83,10 +106,11 @@ function Home() {
                             brilliance, propelling your digital vision to unparalleled heights.
                         </p>
                     </div>
-                    <div className="stages">
+                    <div className="home-stages">
                         {/* implement graph + scroll animation */}
-                        <img src="https://meraakidesigns.com/wp-content/uploads/2024/06/mg_discover.png" alt="graph" className="graph" />
-                        <div className="stage-description">
+                        <img src="https://meraakidesigns.com/wp-content/uploads/2024/06/mg_discover.png" alt="graph" 
+                        className="home-stages-graph" />
+                        <div className="home-stages-description">
                             <h2 className="p1" style={{fontWeight:"bold"}}>Diagnose</h2>
                             <p className="p1">Identify friction points, audience drop-offs, and process inefficiencies</p>
                         </div>
@@ -94,11 +118,13 @@ function Home() {
                 </div>
             </section>
             {/* Case Studies Section */}
-            <section className="case-studies">
+            <section className="home-case-studies">
                 <div className="content-wrapper">
-                    <p className="h1">CASE STUDIES</p>
-                    <h1 className="h2">From Vision To Reality</h1>
-                    <div className="case-study1">
+                    <div className="home-case-studies-head">
+                        <h1 className="h1">CASE STUDIES</h1>
+                        <h1 className="h2">From Vision To Reality</h1>
+                    </div>
+                    <div className="home-case-studies-card">
                         <h3 className="h1">[LOGO] Website Revamp Boys & Girls Club Silicon Valley (BGC-SV)</h3>
                         <p className="p1" style={{lineHeight:"100px"}}>
                             Witness the impact of our solutions in this project
@@ -109,13 +135,13 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* Insigthts & Intelligence Section */}
-            <section className="insights-intelligence">
+            {/* Insights & Intelligence Section */}
+            <section className="home-blogs">
                 <div className="content-wrapper">
                     <p className="h1">INSIGHTS & INTELLIGENCE</p>
                     <h1 className="h2">Our Blogs</h1>
-                    <div className="blogs-showcase">
-                        <div className="blog1">
+                    <div className="home-blogs-showcase">
+                        <div className="home-blog-card">
                             <p className="p1" style={{fontWeight:"bold"}}>Build Your MVP with Speed and Precision</p>
                             <p className="p1">
                                 Accelerate your market entry with a meticulously crafted MVP designed
@@ -123,7 +149,7 @@ function Home() {
                             </p>
                             <p className="p3">An image for blog1 goes here</p>
                         </div>
-                        <div className="blog2">
+                        <div className="home-blog-card">
                             <p className="p1" style={{fontWeight:"bold"}}>Build Your MVP with Speed and Precision</p>
                             <p className="p1">
                                 Accelerate your market entry with a meticulously crafted MVP designed
@@ -214,7 +240,7 @@ function Home() {
                             </ul>
                         </div>
                         <div className="faq-form">
-                            <h3>Do you have any questions?</h3>
+                            <p className="p1" style = {{fontWeight:"bold"}}>Do you have any questions?</p>
                             <p className="p1">Full Name</p>
                             <div className="info-box"><p>John Doe</p></div>
                             <p className="p1">Business Email</p>
