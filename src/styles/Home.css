@@ -85,14 +85,23 @@
     margin-bottom: 30px;
 }
 
-.home-services-dropdown {
-    display: none;
+.home-services-dropdowns {
+    display: flex;
+    flex-direction: column;
 }
 
+.dropbtn {
+    border: none;
+    background: none;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+    width: 400px;
+}
 
-.home-service-types:hover .services-dropdown {
-    display: block;
-    margin-bottom: 5px;
+.home-services-dropdown-list {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 /* approach section styles */

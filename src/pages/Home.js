@@ -3,20 +3,18 @@ import '../styles/Home.css';
 import '../styles/global.css';
 import '../styles/fonts.css';
 import servicesImg from '../assets/services-img.png';
-
-function caseStudiesBtn() {
-
-}
-
-function blogsBtn() {
-
-}
-
-function submitForm() {
-
-}
+import { useState } from 'react';
 
 function Home() {
+
+    const[openSection, setOpenSection] = useState(null);
+
+    const toggleSection = (section) => {
+        setOpenSection(prev =>
+            prev === section ? null : section
+        );
+    };
+
     return (
         <div className="home-content">
             {/* Hero Section */}
@@ -38,8 +36,8 @@ function Home() {
                             Meraaki powers ambitious brands with creative execution, workflow automation, and
                             product strategy—delivering outcomes that move the needle.
                         </p>
-                        <button className="button1">Let's Build Your Backbone</button>
-                        <button className="button2">Explore Capabilities</button>
+                        <button className="button-primary">Let's Build Your Backbone</button>
+                        <button className="buttoon-secondary">Explore Capabilities</button>
                     </div>
                     <div>
                         <video width="320" height="240" controls>
@@ -61,34 +59,55 @@ function Home() {
                         <p className="h2">What We Do Best</p>
                     </div>
                     <div className="home-services-container">
-                        <img src={servicesImg} alt="image" className="home-services-image"/>
-                        <div className="home-service-types-wrapper">
-                            <ul className="home-service-types h2" style={{listStyle:"none"}}>
-                                <li>Design & Branding</li>
-                                <ul className="home-services-dropdown body-medium">
-                                    <li>UI/UX Design</li>
-                                    <li>Brand Identity</li>
-                                    <li>Product Visual Systems</li>
-                                </ul >
-                                <li>Digital Marketing</li>
-                                <ul className="home-services-dropdown body-medium">
-                                    <li>Item 1</li>
-                                    <li>Item 2</li>
-                                    <li>Item 3</li>
-                                </ul>
-                                <li>Tech & Development</li>
-                                <ul className="home-services-dropdown body-medium">
-                                    <li>Item 1</li>
-                                    <li>Item 2</li>
-                                    <li>Item 3</li>
-                                </ul>
-                                <li>Business Automation</li>
-                                <ul className="home-services-dropdown body-medium">
-                                    <li>Item 1</li>
-                                    <li>Item 2</li>
-                                    <li>Item 3</li>
-                                </ul>
-                            </ul>
+                        <img src={servicesImg} alt="image" className="home-services-image" />
+
+                        <div className="home-services-dropdowns">
+                            {/* Design & Branding */}
+                            <button onClick={() => toggleSection('design')} className="dropbtn">
+                                Design & Branding
+                            </button>
+                            {openSection === 'design' && (
+                                <div className="home-services-dropdown-list">
+                                    <p>UI/UX Design</p>
+                                    <p>Brand Identity</p>
+                                    <p>Product Visual Systems</p>
+                                </div>
+                            )}
+                            
+                            {/* Digital Marketing */}
+                            <button onClick={() => toggleSection('marketing')} className="dropbtn">
+                                Digital Marketing
+                            </button>
+                            {openSection === 'marketing' && (
+                               <div className="home-services-dropdown-list">
+                                    <p>Item 1</p>
+                                    <p>Item 2</p>
+                                    <p>Item 3</p>
+                               </div>
+                            )}
+
+                            {/* Tech & Development */}
+                            <button onClick={() => toggleSection('tech')} className="dropbtn">
+                                Tech & Development
+                            </button>
+                            {openSection === 'tech' && (
+                                <div className="home-services-dropdown-list">
+                                    <p>Item 1</p>
+                                    <p>Item 2</p>
+                                    <p>Item 3</p>
+                                </div>
+                            )}
+                            {/* Business Automation */}
+                            <button onClick={() => toggleSection('automation')} className="dropbtn">
+                                Business Automation
+                            </button>
+                            {openSection === 'automation' && (
+                                <div className="home-services-dropdown-list">
+                                    <p>Item 1</p>
+                                    <p>Item 2</p>
+                                    <p>Item 3</p>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>
@@ -161,7 +180,7 @@ function Home() {
                         </div>
                     </div>
                     <div style={{display:"flex", justifyContent:"center"}}>
-                        <button className="button1">Explore More</button>
+                        <button className="button-primary">Explore More</button>
                     </div>
                 </div>
             </section>
@@ -188,7 +207,7 @@ function Home() {
                     <p className="body-large">
                         Let's co-create a digital foundation that drives clarity, creativity, and convention.
                     </p>
-                    <button className="button1">Start Your Project</button>
+                    <button className="button-primary">Start Your Project</button>
                 </div>
             </section>
             {/* FAQ Section */}
@@ -242,37 +261,14 @@ function Home() {
                             </ul>
                         </div>
                         <div className="faq-form">
-                            <p className="p1" style = {{fontWeight:"bold"}}>Do you have any questions?</p>
-                            <p className="p1">Full Name</p>
-                            <div className="info-box"><p>John Doe</p></div>
-                            <p className="p1">Business Email</p>
-                            <div className="info-box"><p>abc@gmail.com</p></div>
-                            <p className="p1">Message</p>
-                            <div className="message-box"><p>Message</p></div>
+                            <p className="body-large" style = {{fontWeight:"bold"}}>Do you have any questions?</p>
+                            <p className="body-large">Full Name</p>
+                            <div className="info-box body-large"><p>John Doe</p></div>
+                            <p className="body-large">Business Email</p>
+                            <div className="info-box body-large"><p>abc@gmail.com</p></div>
+                            <p className="body-large">Message</p>
+                            <div className="message-box body-large"><p>Message</p></div>
                             <button>Submit</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* Footer */}
-            <section className="home-footer">
-                <div className="content-wrapper">
-                    <p className="h2">
-                    Ready to Elevate Your Brand With Customized Digital Solutions?
-                    </p>
-                    <p className="body-large">
-                        Meraaki Designs is a global creative ops studio delivering digital execution, 
-                        automation strategy, and interface design in collaboration with trusted tech partners.
-                    </p>
-                    <p className="body-small">Locations:</p>
-                    <div className="locations">
-                        <div className="india body-xsmall">
-                            <img src="" alt="img" className="body-extra-small" />
-                            <p className="body-extra-small">IND</p>
-                        </div>
-                        <div className="usa">
-                            <img src="" alt="img" className="body-extra-small" />
-                            <p className="body-extra-small">USA</p>
                         </div>
                     </div>
                 </div>

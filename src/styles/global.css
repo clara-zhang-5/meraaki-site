@@ -28,13 +28,13 @@ button:hover {
     cursor: pointer;
 }
 
-.button1 {
+.button-primary {
     background-image: var(--grad1);
     color: white;
     
 }
 
-.button2 {
+.button-secondary {
     background: white;
     color: var(--grad1);
 }
