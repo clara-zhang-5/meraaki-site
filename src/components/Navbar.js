@@ -3,6 +3,7 @@ import '../styles/fonts.css';
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Hamburger from '../assets/hamburger.svg';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ function Navbar() {
         <div className="navbar">
             <div className="navbar-container">
                 <button className="navbar-toggle" onClick={toggleDropdown}>
-                    Menu
+                    <img src={Hamburger} alt="menu" />
                 </button>
                 {isOpen && (
                     <ul className="navbar-dropdown">
