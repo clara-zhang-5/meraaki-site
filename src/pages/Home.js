@@ -53,60 +53,59 @@ function Home() {
             </section>
             {/* Services Section */}
             <section className="home-services">
-                <div className="content-wrapper">
+                <div className="content-wrapper home-services-section">
                     <div className="home-services-head">
-                        <p className="h4" style={{color:"blue"}}>SERVICES</p>
+                        <p className="h5" style={{color:"blue"}}>SERVICES</p>
                         <p className="h2">What We Do Best</p>
+                        <img src={servicesImg} alt="image" className="home-services-image" />
                     </div>
                     <div className="home-services-container">
-                        <img src={servicesImg} alt="image" className="home-services-image" />
-
                         <div className="home-services-dropdowns">
                             {/* Design & Branding */}
-                            <button onClick={() => toggleSection('design')} className="dropbtn">
+                            <button onClick={() => toggleSection('design')} className="dropbtn h3">
                                 Design & Branding
                             </button>
                             {openSection === 'design' && (
-                                <div className="home-services-dropdown-list">
-                                    <p>UI/UX Design</p>
-                                    <p>Brand Identity</p>
-                                    <p>Product Visual Systems</p>
-                                </div>
+                                <ul className="home-services-dropdown-list body-large">
+                                    <li>UI/UX Design</li>
+                                    <li>Brand Identity</li>
+                                    <li>Product Visual Systems</li>
+                                </ul>
                             )}
                             
                             {/* Digital Marketing */}
-                            <button onClick={() => toggleSection('marketing')} className="dropbtn">
+                            <button onClick={() => toggleSection('marketing')} className="dropbtn h3">
                                 Digital Marketing
                             </button>
                             {openSection === 'marketing' && (
-                               <div className="home-services-dropdown-list">
-                                    <p>Item 1</p>
-                                    <p>Item 2</p>
-                                    <p>Item 3</p>
-                               </div>
+                               <ul className="home-services-dropdown-list body-large">
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
                             )}
 
                             {/* Tech & Development */}
-                            <button onClick={() => toggleSection('tech')} className="dropbtn">
+                            <button onClick={() => toggleSection('tech')} className="dropbtn h3">
                                 Tech & Development
                             </button>
                             {openSection === 'tech' && (
-                                <div className="home-services-dropdown-list">
-                                    <p>Item 1</p>
-                                    <p>Item 2</p>
-                                    <p>Item 3</p>
-                                </div>
+                                <ul className="home-services-dropdown-list body-large">
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
                             )}
                             {/* Business Automation */}
-                            <button onClick={() => toggleSection('automation')} className="dropbtn">
+                            <button onClick={() => toggleSection('automation')} className="dropbtn h3">
                                 Business Automation
                             </button>
                             {openSection === 'automation' && (
-                                <div className="home-services-dropdown-list">
-                                    <p>Item 1</p>
-                                    <p>Item 2</p>
-                                    <p>Item 3</p>
-                                </div>
+                                <ul className="home-services-dropdown-list body-large">
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
                             )}
                         </div>
                     </div>
@@ -217,48 +216,71 @@ function Home() {
                     <p className="h2">Frequently Asked Questions</p>
                     <div className="faq-section-wrapper">
                         <div className="faq-section">
-                            <ul className="h4">
-                                <li>
+                            <div className="h4">
+                                <button onClick={() => toggleSection('faq1')} className="dropbtn body-small" style={{fontWeight:"bold"}}>
                                     What does Meraaki specialize in?
-                                    <p className="body-medium">
-                                        Meraaki Designs delivers end-to-end creative ops solutions,
-                                        including brand systems, websites, content automation, and interface
-                                        strategy—backed by tech partners for full-stack execution.
-                                    </p>
-                                </li>
-                                <li>
+                                </button>
+                                {openSection === 'faq1' && (
+                                    <div className="faq-dropdown-list">
+                                        <p className="body-small" style={{color:"gray"}}>
+                                            Meraaki Designs delivers end-to-end creative ops solutions, including brand systems, websites, 
+                                            content automation, and interface strategy—backed by tech partners for full-stack execution.
+                                        </p>
+                                    </div>
+                                )}
+
+                                <button onClick={() => toggleSection('faq2')} className="dropbtn body-small" style={{fontWeight:"bold"}}>
                                     Do you build custom software or AI tools in-house?
-                                    <p className="body-medium">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                                        aliquip ex ea commodo consequat.
-                                    </p>
-                                </li>
-                                <li>
+                                </button>
+                                {openSection === 'faq2' && (
+                                    <div className="faq-dropdown-list">
+                                        <p className="body-small">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                            aliquip ex ea commodo consequat.
+                                        </p>
+                                    </div>
+                                )}
+
+                                <button onClick={() => toggleSection('faq3')} className="dropbtn body-small" style={{fontWeight:"bold"}}>
                                     Who is Meraaki best suited for?
-                                    <p className="body-medium">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                                        aliquip ex ea commodo consequat.
-                                    </p>
-                                </li>
-                                <li>
-                                    Can you work with our in-house dev or marketing teams?
-                                    <p className="body-medium">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                                        aliquip ex ea commodo consequat.
-                                    </p>
-                                </li>
-                                <li>
+                                </button>
+                                {openSection === 'faq3' && (
+                                    <div className="faq-dropdown-list">
+                                        <p className="body-small">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                            aliquip ex ea commodo consequat.
+                                        </p>
+                                    </div>
+                                )}
+                                
+                                <button onClick={() => toggleSection('faq4')} className="dropbtn body-small" style={{fontWeight:"bold"}}>
+                                   Can you work with our in-house dev or marketing teams?
+                                </button>
+                                {openSection === 'faq4' && (
+                                    <div className="faq-dropdown-list">
+                                        <p className="body-small">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                            aliquip ex ea commodo consequat.
+                                        </p>
+                                    </div>
+                                )}
+                                
+                                <button onClick={() => toggleSection('faq5')} className="dropbtn body-small" style={{fontWeight:"bold"}}>
                                     How do I get started?
-                                    <p className="body-medium">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                                        aliquip ex ea commodo consequat.
-                                    </p>
-                                </li>
-                            </ul>
+                                </button>
+                                {openSection === 'faq5' && (
+                                    <div className="faq-dropdown-list">
+                                        <p className="body-small">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                            aliquip ex ea commodo consequat.
+                                        </p>
+                                    </div>
+                                )}
+                            </div>
                         </div>
                         <div className="faq-form">
                             <p className="body-large" style = {{fontWeight:"bold"}}>Do you have any questions?</p>

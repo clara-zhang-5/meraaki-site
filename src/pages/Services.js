@@ -7,7 +7,7 @@ function Services() {
         <div>
             <section className="services-head">
                 <div className="content-wrapper">
-                    <h1>Services</h1>
+                    <p style={{fontSize:"240px"}}>Services</p>
                     <p>Lorem ipsum dolor sit amet consectetur. Metus elit turpis pulvinar orci amet mauris id.</p>
                 </div>
             </section>

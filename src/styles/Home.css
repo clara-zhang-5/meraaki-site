@@ -2,7 +2,6 @@
 .home-hero1 {
     height: 100vh;
     padding-bottom: var(--footer-height);
-    padding-top: var(--header-height);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -48,10 +47,19 @@
 
 .home-services {
     padding-bottom: var(--footer-height);
-    padding-top: var(--header-height);
     background-image: var(--grad3);
     color: black;
 }
+
+.home-services-section {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .home-services-head {
     display: flex;
     flex-direction: column;
@@ -82,7 +90,7 @@
 }
 
 .home-service-types li {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .home-services-dropdowns {
@@ -99,9 +107,8 @@
 }
 
 .home-services-dropdown-list {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    margin: 20px;
+    line-height: 30px;
 }
 
 /* approach section styles */
@@ -144,9 +151,10 @@
 }
 
 .home-case-studies-card {
-    border: 2px solid grey;
     padding: 20px;
     background-image: var(--grad3);
+    border-radius: 10px;
+    min-height: 400px;
 }
 
 /* blogs section styles */
